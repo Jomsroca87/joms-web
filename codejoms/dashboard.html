@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f5f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://wallpapercave.com/wp/wp13549920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+}
+
+.dashboard-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  color: #3498db;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.welcome-section p {
+  color: #ffffff;
+}
+
+.stats-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+.stat-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 1.1em;
+}
+
+.job-postings {
+  margin-bottom: 30px;
+}
+
+.job-postings h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  color: #333;
+}
+
+.apply-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #218838;
+}
+
+</style>
+<body>
+  <div class="dashboard-container">
+    <nav class="navbar">
+      <h1>Dashboard</h1>
+      <button id="logoutButton" class="logout-btn">Logout</button>
+    </nav>
+
+    <section class="welcome-section">
+      <h2>Welcome back, Sir Lito!</h2>
+      <p>Here’s what’s happening in your account today.</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>Job Applications</h3>
+        <p>5 new applications</p>
+      </div>
+      <div class="stat-card">
+        <h3>Messages</h3>
+        <p>3 unread messages</p>
+      </div>
+      <div class="stat-card">
+        <h3>Profile Views</h3>
+        <p>45 views this week</p>
+      </div>
+    </section>
+
+    <section class="job-postings">
+      <h2>Recommended Jobs</h2>
+      <div class="job-list">
+        <div class="job-card">
+          <h3>Software Engineer</h3>
+          <p>Location: Remote</p>
+          <p>Posted: 3 days ago</p>
+          <button class="apply-btn">Apply Now</button>
+        </div>
+        <div class="job-card">
+          <h3>Product Designer</h3>
+          <p>Location: New York, NY</p>
+          <p>Posted: 5 days ago</p>
+          <button class="apply-btn">Apply Now</button>
+        </div>
+        <div class="job-card">
+          <h3>Marketing Specialist</h3>
+          <p>Location: San Francisco, CA</p>
+          <p>Posted: 1 day ago</p>
+          <button class="apply-btn">Apply Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

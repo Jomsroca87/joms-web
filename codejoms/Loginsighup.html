@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-form" id="login-form">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+
+        <button type="submit" class="auth-btn">Login</button>
+        <p class="switch">Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+      </form>
+    </div>
+
+    <div class="auth-form" id="signup-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="new-username">Username</label>
+        <input type="text" id="new-username" placeholder="Enter username" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+
+        <label for="new-password">Password</label>
+        <input type="password" id="new-password" placeholder="Enter password" required>
+
+        <button type="submit" class="auth-btn">Sign Up</button>
+        <p class="switch">Already have an account? <a href="dashboard.html" onclick="toggleForms()">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

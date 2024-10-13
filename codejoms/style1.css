@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+  background-image: url("https://wallpapercave.com/wp/wp13549920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+}
+
+.auth-container, .dashboard {
+  width: 500px;
+  padding: 20px;
+  
+  background-color: rgb(71, 70, 70);
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.auth-form, .dashboard {
+  text-align: center;
+}
+
+.auth-form h2, .dashboard h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.auth-form label {
+  margin: 10px 0 5px;
+  color: #ffffff;
+}
+
+.auth-form input, .dashboard .auth-btn {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.auth-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.auth-btn {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.auth-btn:hover {
+  background-color: #2980b9;
+}
